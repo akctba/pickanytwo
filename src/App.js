@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Grommet} from 'grommet';
+import OptionList from './components/options/OptionList';
+
+const theme = {
+  global: {
+    font: {
+      family: 'Roboto',
+      size: '18px',
+      height: '20px',
+    },
+  },
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Grommet theme={theme}>
+            <header className="App-header">
+
+                <p>
+                    Do you have a project, job or service to be done?
+                </p>
+                <h2>PICK ANY TWO</h2>
+
+                {/* OPTIONS */}
+                <OptionList/> {/* RESULT */}
+
+
+                {/* ADDS */} </header>
+        </Grommet>
+    );
 }
 
 export default App;
