@@ -80,7 +80,7 @@ const OptionList = (props) => {
     return (
         <>
             <Box background="dark-2" round width="xlarge" align="center">
-                <Responsive gap="small" margin="small" columns="xlarge" rows="xsmall">
+                <Responsive gap="small" margin="small" columns="xlarge" rows="small">
                     {(!!state.options) ? state.options.map((item, i) => <Option label={item} key={i}/> ) : <Text>{t('no-options')}</Text> }
                 </Responsive>
             </Box>

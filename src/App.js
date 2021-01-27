@@ -2,7 +2,7 @@
 import React, { Suspense, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import {Box, Text, Grommet, Heading, Header, Anchor, Nav, Menu} from 'grommet';
+import {Box, Text, Grommet, Header, Anchor, Nav, Menu} from 'grommet';
 import { Projects } from 'grommet-icons';
 import OptionList from './components/options/OptionList';
 
@@ -24,7 +24,7 @@ function PickApp() {
     const { t, i18n } = useTranslation();
 
     const [language, setLanguage] = useState('en');
-    const langs = ['en', 'fr', 'es', 'pt', 'pt-br'];
+    const langs = ['en', 'fr', 'es', 'pt-br'];
 
     useEffect(() => {
         i18n.changeLanguage(language);
@@ -35,6 +35,7 @@ function PickApp() {
             <Header pad="small" height="xxsmall" background="dark-1">
               <Anchor href="/" icon={<Projects />} />
                 <Nav direction="row">
+                    
                     <Menu label={language}
                     items={langs.map(l => {return {label:l, onClick: () => {setLanguage(l)}}})}
                     />
@@ -46,8 +47,8 @@ function PickApp() {
                     align="center">
 
                     <Box align="center">
-                        <Text>{t('title1')}</Text>
-                        <Heading level={2}>{t('title2')}</Heading>
+                        <Text align="center">{t('title1')}</Text>
+                        <Text size="large" align="center">{t('title1')}</Text>
                     </Box>
 
                     <OptionProvider>

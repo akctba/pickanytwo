@@ -26,7 +26,7 @@ const Option = (props) => {
             background={isChecked?"status-ok":"brand"}
             onClick={()=>{dispatch({type: "TOGGLE", item:props.label});verifyThird(props.label);}}
             align="center" round elevation="small" margin="small">
-                <Text margin="small"><CheckBox checked={isChecked} label={t(props.label)} /></Text>
+                <Text margin="xxsmall" size="medium"><CheckBox size="small" checked={isChecked} label={t(props.label)} /></Text>
         </Box>
     )
 }
