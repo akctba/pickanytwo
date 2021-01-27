@@ -22,7 +22,7 @@ const Option = (props) => {
     }
 
     return (
-        <Box width="small" 
+        <Box width="small" flex={false} key={props.label}
             background={isChecked?"status-ok":"brand"}
             onClick={()=>{dispatch({type: "TOGGLE", item:props.label});verifyThird(props.label);}}
             align="center" round elevation="small" margin="small">
