@@ -1,5 +1,6 @@
 import React, { useState, useContext, useLayoutEffect } from "react";
-import { Box, Text } from 'grommet';
+import { Box, Text, Button } from 'grommet';
+import { ShareOption } from 'grommet-icons';
 
 import { OptionContext } from '../../context/Context';
 
@@ -31,7 +32,9 @@ const Result = (props) => {
     return (
         !!state.selected && state.selected.length >= 2
         ?<Box width="large" background="dark-2" align="center" round margin="small">
-            <Text margin="small">{`${state.selected[0]} and ${state.selected[1]}: ${answer}`}</Text>
+            <Text margin="small">{`${state.selected[0]} and ${state.selected[1]}: ${answer}`}
+            <Button icon={<ShareOption />} hoverIndicator onClick={() => {}} />
+            </Text>
         </Box>
         :''
     )
