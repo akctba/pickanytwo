@@ -2,6 +2,8 @@ import React, { useState, useContext, useLayoutEffect } from "react";
 import { Box, Text, Button } from 'grommet';
 import { ShareOption } from 'grommet-icons';
 
+import { useTranslation } from 'react-i18next';
+
 import { OptionContext } from '../../context/Context';
 
 const Result = (props) => {
@@ -10,19 +12,21 @@ const Result = (props) => {
 
     const [answer, setAnswer] = useState('');
 
+    const { t } = useTranslation();
+
     useLayoutEffect(() => {
         if (state.selected.includes('Fast') && state.selected.includes('Cheap')) {
-            setAnswer('probably it will be careless or incomplete.');
+            setAnswer(t('Fast-Cheap'));
         } else if (state.selected.includes('Fast') && state.selected.includes('Free')) {
-            setAnswer('trash.');
+            setAnswer(t('Fast-Free'));
         } else if (state.selected.includes('Fast') && state.selected.includes('Great')) {
-            setAnswer('you get what you paid for. It won\'t be cheap.');
+            setAnswer(t('Fast-Great'));
         } else if (state.selected.includes('Free') && state.selected.includes('Great')) {
-            setAnswer('better you double check or do it yourself.');
+            setAnswer(t('Free-Great'));
         } else if (state.selected.includes('Great') && state.selected.includes('Cheap')) {
-            setAnswer('it will not be fast.');
+            setAnswer(t('Great-Cheap'));
         } else if (state.selected.includes('Free') && state.selected.includes('Cheap')) {
-            setAnswer('does that do anything?');
+            setAnswer(t('Free-Cheap'));
         } else {
             setAnswer('');
         }

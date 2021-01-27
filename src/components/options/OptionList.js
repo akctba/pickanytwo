@@ -2,17 +2,20 @@ import React, { useContext } from "react";
 import { Box, Button, Text } from 'grommet';
 import { Refresh } from 'grommet-icons';
 
+import { useTranslation } from 'react-i18next';
+
 import { OptionContext } from '../../context/Context';
 import Option from "./Option";
 
 const OptionList = (props) => {
 
     const { state, dispatch } = useContext(OptionContext);
+    const { t } = useTranslation();
     
     return (
         <>
             <Box background="dark-2" round width="large" align="center" direction="row">
-                {(!!state.options) ? state.options.map((item, i) => <Option label={item} key={i}/> ) : <Text>No options</Text> }
+                {(!!state.options) ? state.options.map((item, i) => <Option label={item} key={i}/> ) : <Text>{t('no-options')}</Text> }
             </Box>
             
             <Box align="center" margin="small">
@@ -21,7 +24,7 @@ const OptionList = (props) => {
                     size="small"
                     onClick={() => dispatch({type: "CLEAR"})} 
                     {...props}
-                    label="Clear" />
+                    label={t("Clear")} />
             </Box>
         </>
     )

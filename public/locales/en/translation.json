@@ -1,0 +1,21 @@
+{
+    "title1": "Thinking about hiring a project, job or service?",
+    "title2": "How do you want it done?",
+    "no-options": "No options",
+    "Fast": "Fast",
+    "Cheap": "Cheap",
+    "Great": "Great",
+    "Free": "Free",
+    "Clear": "Clear",
+
+    "Fast-Cheap": "probably it will be careless or incomplete.",
+    "Fast-Free": "trash.",
+    "Fast-Great": "you get what you paid for. It won't be cheap.",
+    "Free-Great": "better you double check or do it yourself.",
+    "Great-Cheap": "it will not be fast.",
+    "Free-Cheap": "does it do anything?",
+
+    "Fast-Cheap-Great": "Utopia, impossible!",
+    "Fast-Free-Great": "No way!"
+
+}

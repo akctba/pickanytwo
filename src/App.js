@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import {Box, Text, Grommet, Heading, Header, Anchor, Nav} from 'grommet';
 //import { Projects } from 'grommet-icons';
 import OptionList from './components/options/OptionList';
@@ -16,7 +18,12 @@ const theme = {
     }
 };
 
-function App() {
+function PickApp() {
+
+    const { t, i18n } = useTranslation();
+
+    //console.log("i18n >>", i18n);
+
     return (
         <Grommet full theme={theme}>
             {/* <Header pad="small" height="xxsmall" background="dark-1">
@@ -34,27 +41,30 @@ function App() {
                     background="dark-1"
                     align="center">
 
-
                     <Box align="center">
-                        <Text>Thinking about hiring a project, job or service?</Text>
-                        <Heading level={2}>How do you want it done?</Heading>
+                        <Text>{t('title1')}</Text>
+                        <Heading level={2}>{t('title2')}</Heading>
                     </Box>
 
                     <OptionProvider>
-                        {/* OPTIONS */}
                         <OptionList/> 
                         
-                        
-                        {/* RESULT */}
                         <Result />
-
                     </OptionProvider>
 
                     {/* ADDS */} 
-
+                    
                   </Box>
         </Grommet>
     );
+}
+
+function App() {
+    return (
+        <Suspense fallback="loading...">
+          <PickApp />
+        </Suspense>
+      );
 }
 
 export default App;
