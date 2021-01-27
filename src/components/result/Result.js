@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useContext, useLayoutEffect } from "react";
-import { Box, Text, Button } from 'grommet';
-import { ShareOption } from 'grommet-icons';
+import { Box, Text } from 'grommet';
 
 import { useTranslation } from 'react-i18next';
 
