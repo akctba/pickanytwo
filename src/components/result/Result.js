@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useContext, useLayoutEffect } from "react";
 import { Box, Text, Button } from 'grommet';
 import { ShareOption } from 'grommet-icons';
