@@ -13,7 +13,6 @@ const OptionList = (props) => {
         <>
             <Box background="dark-2" round width="large" align="center" direction="row">
                 {(!!state.options) ? state.options.map((item, i) => <Option label={item} key={i}/> ) : <Text>No options</Text> }
-                {console.log("State>> ", state)}
             </Box>
             
             <Box align="center" margin="small">

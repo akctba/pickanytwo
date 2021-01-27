@@ -8,8 +8,7 @@ const initialState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case "CLEAR":
-            console.log('vai limpar...');
-            return {...state, selected: []};
+            return {...initialState};
         case "TOGGLE":
             if (state.selected.includes(action.item)) {
                 return {...state, selected: state.selected.filter(i => i !== action.item)};

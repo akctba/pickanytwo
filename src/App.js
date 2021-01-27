@@ -27,10 +27,8 @@ function App() {
 
 
                     <Box align="center">
-                        <Text>
-                            Do you have a project, job or service to be done?
-                        </Text>
-                        <Heading level={2}>PICK ANY TWO</Heading>
+                        <Text>Thinking about hiring a project, job or service?</Text>
+                        <Heading level={2}>How do you want it done?</Heading>
                     </Box>
 
                     <OptionProvider>
