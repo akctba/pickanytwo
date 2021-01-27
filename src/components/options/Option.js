@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Box, Text, CheckBox } from 'grommet';
+
+import { OptionContext } from '../../context/Context';
 
 const Option = (props) => {
 
+    const {state, dispatch} = useContext(OptionContext);
+    const isChecked = state.selected.includes(props.label);
+
     return (
-        <>  
-            <input type="checkbox" id={props.item} name={props.item}/>
-            <label htmlFor={props.item}>{props.item}</label>
-        </>
+        <Box width="small" 
+            background={isChecked?"status-ok":"brand"}
+            onClick={()=>{dispatch({type: "TOGGLE", item:props.label})}}
+            align="center" round elevation="small" margin="small">
+                <Text margin="small"><CheckBox checked={isChecked} label={props.label} /></Text>
+        </Box>
     )
 }
 
