@@ -1,0 +1,21 @@
+{
+    "title1": "Pensando em contratar um projeto, trabalho ou serviço?",
+    "title2": "Como quer que seja feito?",
+
+    "no-options": "Sem opções",
+    "Fast": "Rápido",
+    "Cheap": "Barato",
+    "Great": "Qualidade",
+    "Free": "Gratuito",
+    "Clear": "Limpar",
+
+    "Fast-Cheap": "Provavelmente será desleixado ou incompleto.",
+    "Fast-Free": "Prepare-se para receber uma porcaria.",
+    "Fast-Great": "Terá que ser bem pago.",
+    "Free-Great": "Melhor fazer você mesmo.",
+    "Great-Cheap": "Então não vai ser rápido.",
+    "Free-Cheap": "E isso faz alguma coisa?",
+
+    "Fast-Cheap-Great": "Utopia, impossivel!",
+    "Fast-Free-Great": "Sem chance!"
+}
