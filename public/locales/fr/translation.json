@@ -1,0 +1,21 @@
+{
+    "title1": "Vous envisagez d'embaucher un projet, un emploi ou un service?",
+    "title2": "Comment voulez-vous que cela se fasse?",
+    "no-options": "Aucune option",
+    "Fast": "Vite",
+    "Cheap": "Pas cher",
+    "Great": "Géniale",
+    "Free": "Gratuit",
+    "Clear": "Nettoyer",
+
+    "Fast-Cheap": "Ce sera probablement imprudent ou incomplet.",
+    "Fast-Free": "Soyez prêt à recevoir des déchets.",
+    "Fast-Great": "Tu as ce que tu as payé. Ce ne sera pas bon marché.",
+    "Free-Great": "Mieux vaut vérifier ou faire vous-même.",
+    "Great-Cheap": "Ce ne sera pas rapide.",
+    "Free-Cheap": "Cela fait-il quelque chose?",
+
+    "Fast-Cheap-Great": "Utopie, impossible!",
+    "Fast-Free-Great": "En aucune façon!"
+
+}

@@ -8,14 +8,13 @@
     "Free": "Free",
     "Clear": "Clear",
 
-    "Fast-Cheap": "probably it will be careless or incomplete.",
-    "Fast-Free": "trash.",
-    "Fast-Great": "you get what you paid for. It won't be cheap.",
-    "Free-Great": "better you double check or do it yourself.",
-    "Great-Cheap": "it will not be fast.",
-    "Free-Cheap": "does it do anything?",
+    "Fast-Cheap": "Probably it will be careless or incomplete.",
+    "Fast-Free": "Be prepared to receive trash.",
+    "Fast-Great": "You get what you paid for. It won't be cheap.",
+    "Free-Great": "Better you double check or do it yourself.",
+    "Great-Cheap": "It will not be fast.",
+    "Free-Cheap": "Does it do anything?",
 
     "Fast-Cheap-Great": "Utopia, impossible!",
     "Fast-Free-Great": "No way!"
-
 }

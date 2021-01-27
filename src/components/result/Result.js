@@ -36,7 +36,7 @@ const Result = (props) => {
     return (
         !!state.selected && state.selected.length >= 2
         ?<Box width="large" background="dark-2" align="center" round margin="small">
-            <Text margin="small">{`${state.selected[0]} and ${state.selected[1]}: ${answer}`}
+            <Text size="xlarge" margin="small">{answer}
             <Button icon={<ShareOption />} hoverIndicator onClick={() => {}} />
             </Text>
         </Box>

@@ -9,14 +9,13 @@
     "Free": "Gratuito",
     "Clear": "Limpar",
 
-    "Fast-Cheap": "provavelmente será desleixado ou imcompleto.",
-    "Fast-Free": "porcaria.",
-    "Fast-Great": "será bem pago.",
-    "Free-Great": "faça você mesmo.",
-    "Great-Cheap": "não vai ser rápido.",
-    "Free-Cheap": "isso faz alguma coisa?",
+    "Fast-Cheap": "Provavelmente será desleixado ou incompleto.",
+    "Fast-Free": "Prepare-se para receber uma porcaria.",
+    "Fast-Great": "Terá que ser bem pago.",
+    "Free-Great": "Melhor fazar você mesmo.",
+    "Great-Cheap": "Então não vai ser rápido.",
+    "Free-Cheap": "E isso faz alguma coisa?",
 
     "Fast-Cheap-Great": "Utopia, impossivel!",
     "Fast-Free-Great": "Sem chance!"
-
 }
