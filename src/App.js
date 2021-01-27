@@ -24,7 +24,7 @@ function PickApp() {
     const { t, i18n } = useTranslation();
 
     const [language, setLanguage] = useState('en');
-    const langs = ['en', 'fr', 'es', 'pt-br'];
+    const langs = ['en', 'fr', 'es', 'pt-BR'];
 
     useEffect(() => {
         i18n.changeLanguage(language);
@@ -58,7 +58,7 @@ function PickApp() {
 
                 
                 {/* ADDS */} 
-                
+
             </Box>
             <Footer background="dark-2" pad="medium">
                 <Text>&#169; 2021 Akctba&#8482;</Text>
