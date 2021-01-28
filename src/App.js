@@ -27,7 +27,9 @@ function PickApp() {
     const langs = ['en', 'fr', 'es', 'pt', 'pt-BR'];
 
     useEffect(() => {
-        i18n.changeLanguage(language);
+        i18n.changeLanguage(language, (err, t) => {
+            if (err) return console.log('Something went wrong loading', err);
+        });
     }, [language]);
 
     return (
@@ -62,6 +64,7 @@ function PickApp() {
             </Box>
             <Footer background="dark-2" pad="medium">
                 <Text>&#169; 2021 Akctba&#8482;</Text>
+                <Text size="xsmall">Detected language: {i18n.language}</Text>
                 <Anchor label="About" href="https://github.com/akctba/pickanytwo"/>
             </Footer>
         </Grommet>
