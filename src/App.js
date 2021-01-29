@@ -64,7 +64,7 @@ function PickApp() {
             </Box>
             <Footer background="dark-2" pad="medium">
                 <Text>&#169; 2021 Akctba&#8482;</Text>
-                <Text size="xsmall">Detected language: {i18n.language}</Text>
+                <Text size="xsmall">Detected: {i18n.language} Browser: {navigator.language} </Text>
                 <Anchor label="About" href="https://github.com/akctba/pickanytwo"/>
             </Footer>
         </Grommet>

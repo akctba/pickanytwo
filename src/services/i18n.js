@@ -9,7 +9,7 @@ i18next
   .use(HttpApi)
   .use(LanguageDetector)
   .init({
-    fallbackLng: 'pt',
+    fallbackLng: 'en',
     debug: true,
     load: 'languageOnly',
     detection: { lookupLocalStorage: 'language'},
