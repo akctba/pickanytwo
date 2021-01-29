@@ -9,9 +9,11 @@ i18next
   .use(HttpApi)
   .use(LanguageDetector)
   .init({
-    fallbackLng: 'en',
-    debug: false,
-
+    fallbackLng: 'pt',
+    debug: true,
+    load: 'languageOnly',
+    detection: { lookupLocalStorage: 'language'},
+    lng: navigator.language.substr(0, 2),
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
       format,
