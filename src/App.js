@@ -34,40 +34,48 @@ function PickApp() {
 
     return (
         <Grommet full theme={theme}>
-            <Header pad="small" height="xxsmall" background="dark-1">
-              <Anchor href="/" icon={<Projects />} />
-                <Nav direction="row">
-                    <Menu label={language}
-                    items={langs.map(l => {return {label:l, onClick: () => {setLanguage(l)}}})}
-                    />
-                </Nav>
-            </Header>
-
-            <Box fill={true}
+            <Box fill={true} 
                 background="dark-1"
                 align="center">
 
-                <Box align="center">
-                    <Text align="center">{t('title1')}</Text>
-                    <Text size="large" align="center">{t('title2')}</Text>
+                <Box fill="horizontal">
+                    <Header pad="small" height="xxsmall" background="dark-1">
+                    <Anchor href="/" icon={<Projects />} />
+                        <Nav direction="row">
+                            <Menu label={language}
+                            items={langs.map(l => {return {label:l, onClick: () => {setLanguage(l)}}})}
+                            />
+                        </Nav>
+                    </Header>
                 </Box>
 
-                <OptionProvider>
-                    <OptionList/> 
+                <Box fill={true}
+                    background="dark-1"
+                    align="center">
+
+                    <Box align="center">
+                        <Text align="center">{t('title1')}</Text>
+                        <Text size="large" align="center">{t('title2')}</Text>
+                    </Box>
+
+                    <OptionProvider>
+                        <OptionList/> 
+                        
+                        <Result />
+                    </OptionProvider>
+
                     
-                    <Result />
-                </OptionProvider>
+                    {/* ADDS */} 
 
-                
-                {/* ADDS */} 
-
+                </Box>
+                <Box fill="horizontal">
+                    <Footer background="dark-2" pad="medium">
+                        <Text>&#169; 2021 Akctba&#8482;</Text>
+                        <Text size="xsmall">Detected: {i18n.language} Browser: {navigator.language} </Text>
+                        <Anchor label="About" href="https://github.com/akctba/pickanytwo"/>
+                    </Footer>
+                </Box>
             </Box>
-            <Footer background="dark-2" pad="medium">
-                <Text>&#169; 2021 Akctba&#8482;</Text>
-                <Text size="xsmall">Detected: {i18n.language} Browser: {navigator.language} </Text>
-                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a></div>
-                <Anchor label="About" href="https://github.com/akctba/pickanytwo"/>
-            </Footer>
         </Grommet>
     );
 }
