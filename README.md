@@ -2,8 +2,17 @@
 
 Helping to explain projects to clients
 
-## Available Scripts
+## Project goals
+* To test the [react-i18next](https://react.i18next.com/) internacionalization and localization
+* To test the [Grommet UI](https://v2.grommet.io/) library
+* have fun =)
 
+## Can I see it running?
+This webapp is published on Vercel through a CI/CD pipeline and available at [https://pickanytwo.vercel.app/](https://pickanytwo.vercel.app/)
+
+
+## Available Scripts
+This project was created using the react-create-app boilerplate.
 In the project directory, you can run:
 
 ### `npm start`
@@ -43,13 +52,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### Published on Vercel:
-[https://pickanytwo.vercel.app/](https://pickanytwo.vercel.app/)

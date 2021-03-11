@@ -10,15 +10,20 @@ i18next
   .use(LanguageDetector)
   .init({
     fallbackLng: 'en',
+    lng: navigator.language.substr(0, 2),
+    
     debug: true,
     load: 'languageOnly',
-    detection: { lookupLocalStorage: 'language'},
-    lng: navigator.language.substr(0, 2),
+    detection: { 
+      lookupLocalStorage: 'language',
+      order: ['navigator', 'querystring', 'cookie', 'localStorage', 'sessionStorage']},
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
       format,
     }
   });
+
+  // order: ['navigator', 'querystring', 'cookie', 'localStorage', 'sessionStorage', 'htmlTag', 'path', 'subdomain']},
 
 export default i18next;
 
