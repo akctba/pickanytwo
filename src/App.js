@@ -23,8 +23,7 @@ function PickApp() {
 
     const { t, i18n } = useTranslation();
 
-    const [language, setLanguage] = useState('en');
-    const langs = ['en', 'fr', 'es', 'pt', 'pt-BR'];
+    const [language, setLanguage] = useState(i18n.language);
 
     useEffect(() => {
         i18n.changeLanguage(language, (err, t) => {
@@ -43,7 +42,7 @@ function PickApp() {
                     <Anchor href="/" icon={<Projects />} />
                         <Nav direction="row">
                             <Menu label={language}
-                            items={langs.map(l => {return {label:l, onClick: () => {setLanguage(l)}}})}
+                            items={i18n.languages.map(l => {return {label:l, onClick: () => {setLanguage(l)}}})}
                             />
                         </Nav>
                     </Header>
