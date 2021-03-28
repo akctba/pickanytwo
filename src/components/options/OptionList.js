@@ -75,14 +75,15 @@ const OptionList = (props) => {
     const { state, dispatch } = useContext(OptionContext);
     const { t } = useTranslation();
 
-    
-    
     return (
         <>
             <Box background="dark-2" round width="xlarge" align="center">
                 <Responsive gap="small" margin="small" columns="xlarge" rows="small">
                     {(!!state.options) ? state.options.map((item, i) => <Option label={item} key={i}/> ) : <Text>{t('no-options')}</Text> }
                 </Responsive>
+                <Text size="small" color="status-warning">
+                  {!!state.third?t("thirdOption", {third: state.third}):null}&nbsp;
+                </Text>
             </Box>
             
             <Box align="center" margin="small">
