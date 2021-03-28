@@ -10,9 +10,12 @@ Helping to explain project decisions to some clients
 ## Can I see it running?
 This webapp is published on Vercel through a CI/CD pipeline and available at [https://pickanytwo.vercel.app/](https://pickanytwo.vercel.app/)
 
+## Prerequisites
+* NodeJs
+* Web browser
 
 ## Available Scripts
-This project was created using the react-create-app boilerplate.
+This project was created using the react-create-app boilerplate. After clone the project, run `npm install` in order to install the node_modules dependencies.
 In the project directory, you can run:
 
 ### `npm start`

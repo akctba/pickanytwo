@@ -23,8 +23,8 @@ function PickApp() {
 
     const { t, i18n } = useTranslation();
 
-    const [language, setLanguage] = useState('en');
-    const langs = ['en', 'fr', 'es', 'pt', 'pt-BR'];
+    const [language, setLanguage] = useState(i18n.language);
+    const langs = ['en', 'fr', 'es', 'pt'];
 
     useEffect(() => {
         i18n.changeLanguage(language, (err, t) => {

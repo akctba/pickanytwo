@@ -5,9 +5,9 @@ import { initReactI18next } from 'react-i18next';
 import format from "./i18n-format";
 
 i18next
-  .use(initReactI18next)
-  .use(HttpApi)
-  .use(LanguageDetector)
+.use(HttpApi)
+.use(LanguageDetector)
+.use(initReactI18next)
   .init({
     fallbackLng: 'en',
     lng: navigator.language.substr(0, 2),
@@ -15,18 +15,15 @@ i18next
     debug: true,
     load: 'languageOnly',
     detection: { 
-      lookupLocalStorage: 'language',
-      order: ['navigator', 'querystring', 'cookie', 'localStorage', 'sessionStorage']},
+      lookupLocalStorage: 'lng',
+      order: ['querystring', 'navigator', 'cookie', 'localStorage', 'sessionStorage']},
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
       format,
     }
   });
 
-  // order: ['navigator', 'querystring', 'cookie', 'localStorage', 'sessionStorage', 'htmlTag', 'path', 'subdomain']},
+//*** call without param to use language detector
+i18next.changeLanguage();
 
 export default i18next;
-
-export function languageCodeOnly(fullyQualifiedCode) {
-  return fullyQualifiedCode.split("-")[0];
-}
