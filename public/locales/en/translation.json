@@ -15,6 +15,5 @@
     "Great-Cheap": "It will not be fast.",
     "Free-Cheap": "Does it do anything?",
 
-    "Fast-Cheap-Great": "Utopia, impossible!",
-    "Fast-Free-Great": "No way!"
+    "thirdOption": "Can't be {{third}} also, impossible!"
 }

@@ -12,20 +12,20 @@ const Option = (props) => {
     let isDisabled = !isChecked && state.selected.length === 2;
     const { t } = useTranslation();
 
-    const verifyThird = (third) => {
-        if(!isChecked && state.selected.length === 2) {
-            if (state.selected.includes('Fast') && state.selected.includes('Cheap') && third==='Great') {
-                alert(t('Fast-Cheap-Great')); 
-            } else if (state.selected.includes('Fast') && state.selected.includes('Free') && third === 'Great') {
-                alert(t('Fast-Free-Great'));
-            }
-        }
-    }
+    // const verifyThird = (third) => {
+    //     if(!isChecked && state.selected.length === 2) {
+    //         if (state.selected.includes('Fast') && state.selected.includes('Cheap') && third==='Great') {
+    //             alert(t('Fast-Cheap-Great')); 
+    //         } else if (state.selected.includes('Fast') && state.selected.includes('Free') && third === 'Great') {
+    //             alert(t('Fast-Free-Great'));
+    //         }
+    //     }
+    // }
 
     return (
         <Box width="small" flex={false} key={props.label}
             background={isDisabled?"status-disabled":isChecked?"status-ok":"brand"}
-            onClick={()=>{dispatch({type: "TOGGLE", item:props.label});verifyThird(props.label);}}
+            onClick={()=>{dispatch({type: "TOGGLE", item:props.label});/*verifyThird(props.label);*/}}
             align="center" round elevation="small" margin="small">
                 <Text margin="xxsmall" size="medium" color={isDisabled?"light-6":""}><CheckBox size="small" checked={isChecked} label={t(props.label)} /></Text>
         </Box>
